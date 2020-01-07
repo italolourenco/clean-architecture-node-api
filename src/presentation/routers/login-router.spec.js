@@ -1,4 +1,4 @@
-class Loginrouter {
+class LoginRouter {
   route (httpRequest) {
     if (!httpRequest.body.email) {
       return {
@@ -10,7 +10,7 @@ class Loginrouter {
 
 describe('Login Router', () => {
   test('Should return 400 if no email is provided', () => {
-    const sut = new Loginrouter()
+    const sut = new LoginRouter()
     const httpRequest = {
       body: {
         password: '123'
