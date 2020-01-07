@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/italolourenco/clean-architecture-node-api.git"
   },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
   "author": "Italo Lourenço",
   "license": "ISC",
   "bugs": {
