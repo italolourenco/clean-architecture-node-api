@@ -10,8 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/italolourenco/clean-architecture-node-api.git"
   },
-  "lint-staged":{
-    "*.js": ["standard"]
+  "lint-staged": {
+    "*.js": [
+      "standard"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "author": "Italo Lourenço",
   "license": "ISC",
@@ -20,6 +27,7 @@
   },
   "homepage": "https://github.com/italolourenco/clean-architecture-node-api#readme",
   "devDependencies": {
+    "husky": "^4.0.0",
     "lint-staged": "^9.5.0",
     "standard": "^14.3.1"
   }
